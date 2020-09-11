@@ -1,13 +1,13 @@
 def greatest_common_divisor(x,y):
     print "For", x, "and", y,","  
-    r=x%y
-    while r>0:
-        r=x%y
-        if r ==0: 
-            print "the Greatest Common Divisor: ", y,"."
+    remainder = x % y
+    while remainder > 0:
+        remainder = x % y
+        if remainder == 0: 
+            print "The Greatest Common Divisor: ", y,"."
         else:
-            z=y
-            x=z
-            y=r
+            temp = y
+            x = temp
+            y = remainder
 
 greatest_common_divisor(11, 99)
